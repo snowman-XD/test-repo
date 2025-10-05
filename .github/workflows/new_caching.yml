@@ -31,7 +31,7 @@ jobs:
 
       - name: prime-cache-082a12d
         run: |
-          if [[ "${{ steps.cache-uv.outputs.cache-hit }}" == "true" ]]; then
+          if [[ "${{ steps.cache-uv.outputs.cache-hit }}" == "false" ]]; then
             echo "Cache hit! Dependencies were restored."
           else
             echo "Cache miss. Dependencies were installed and cache will be saved."
